@@ -1,0 +1,38 @@
+// .accordion-button::after {
+//     display: none;
+// }
+#about_service{
+    padding: 100px 0;
+    .clps_menu{
+        h2{
+            button{
+                position: relative;
+                &:after{
+                    position: absolute !important;
+                    content: '';
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 12px;
+                    height: 2px;
+                    background: red;
+                }
+                &[aria-expanded="false"]:before{
+                    position: absolute !important;
+                    content: '';
+                    right: 24px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 2px;
+                    height: 12px;
+                    background: red;
+                }
+            }
+        }
+    }
+
+    .about_ser_img{
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}

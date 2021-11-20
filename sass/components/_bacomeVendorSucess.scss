@@ -1,0 +1,36 @@
+.sucess_slider {
+
+    .su_story_rvw {
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+
+        li {
+            button {
+                font-size: 0;
+                width: 10px;
+                height: 10px;
+                background: red;
+                border: 0;
+                border-radius: 40%;
+                margin: 0 2px;
+            }
+
+            &.slick-active {
+                button {
+                    width: 20px;
+                    border-radius: 25%;
+                }
+            }
+        }
+    }
+
+    .slick-slide {
+        padding: 0 12px !important;
+    }
+}
